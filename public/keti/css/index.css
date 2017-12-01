@@ -1,0 +1,599 @@
+html,body{
+    position: relative;
+}
+.head_box{
+    width: 100%;
+    height: 130px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px #ccc;
+}
+.head{
+    width: 1090px;
+    height: 130px;
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+    height: 130px;
+    line-height: 130px;
+}
+.logo img{
+   vertical-align: middle;
+}
+.head_fixed{
+    width: 100%;
+    height: 60px;
+    padding:0 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    box-sizing: border-box;
+    box-shadow: 0 2px 2px #ddd;
+    background-color: #00757F;
+}
+.head_fixed .logo{
+    height: 60px;
+    line-height: 60px;
+}
+.head_fixed .logo img{
+    height: 40px;
+    width: auto;
+}
+.head_fixed .nav{
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    line-height: 60px;
+}
+.head_fixed .nav li{
+    font-size: 16px;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    margin: 0;
+    padding: 0;
+    margin-left: 50px;
+    border: none;
+}
+.head_fixed .nav li.current{
+    border: none;
+}
+.head_fixed .nav li a{
+    color: #fff;
+    font-size: 16px;
+}
+.head_fixed .login{
+    margin: 0;
+}
+.head_fixed .login .btn a{
+    color: #fff;
+}
+.head_fixed .login .btn:hover a{
+    color: #68cb9b !important;
+}
+/* 导航 */
+.nav{
+    float: left;
+    margin-top: 30px;
+    padding: 15px 0 0 0;
+}
+.nav li{
+    float: left;
+    margin-left: 30px;
+    padding: 8px 10px;
+}
+.nav li:first-child{
+    margin-left: 50px;
+}
+.nav li a{
+    font-size: 20px;
+}
+.nav li.current{
+    cursor: pointer;
+    border-bottom: 2px solid #68cb9b;
+}
+.nav li.current a{
+    color: #68cb9b;
+}
+
+
+/* 登录 */
+.login{
+    float: right;
+    margin-top: 35px;
+    padding: 15px 0 0 0;
+}
+.login input{
+    padding: 6px 10px;
+    border-radius: 20px;
+    margin-right: 60px;
+    background-image: url(imgs/search.png);
+    background-size: auto 80%;
+    background-repeat: no-repeat;
+    background-position: right;
+    border: 1px solid #bbb;
+}
+.login .btn{
+    float: right;
+    cursor: pointer;
+}
+.login .btn .icon{
+    float: left;
+    width: 18px;
+    height: 18px;
+    background-image: url(imgs/icon-login.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    margin: 3px 10px 0 0;
+}
+.login .btn a{
+    float: left;
+    font-size: 16px;
+}
+
+
+/* 轮播图 */
+.lunbo{
+    /*margin-top: 60px;*/
+    position: relative;
+    padding-bottom: 30%;
+}
+.lunbo .boxgallery .panel img{
+    cursor: pointer;
+}
+
+/* 学校课程 */
+.kecheng,.teacher{
+    width: 1090px;
+    margin: 0 auto;
+}
+.kecheng .kecheng_head,.teacher .teacher_head{
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+.kecheng .kecheng_head p,.teacher .teacher_head p{
+    font-size: 26px;
+    padding: 30px 0;
+    text-align: center;
+    position: relative;
+}
+.teacher .teacher_head .more{
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    color: #666;
+    font-size: 16px;
+    cursor: pointer;
+}
+.teacher .teacher_head .more:hover{
+    color: #68cb9b;
+}
+.kecheng .kecheng_head .kecheng_nav{
+    width: 332px;
+    margin: 0 auto;
+}
+.kecheng .kecheng_head .kecheng_nav li{
+    float: left;
+    font-size: 16px;
+    padding:0 10px 10px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.kecheng .kecheng_head .kecheng_nav li:first-child{
+    margin-left: 0;
+}
+.kecheng .kecheng_head .kecheng_nav li.current{
+    border-bottom: 1px solid #68cb9b;
+}
+.kecheng .kecheng_head .kecheng_nav li.current a{
+    color: #68cb9b;
+}
+
+
+/* 课程列表 */
+.kecheng_box,.teacher_box,.hudong_box{
+    margin-top: 50px;
+}
+.kecheng_body {
+    width: 1090px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.kecheng_body ul {
+    overflow: hidden;
+    margin-left: -30px;
+}
+.kecheng_body .tp {
+    width: 25%;
+    float: left;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.kecheng_body .tp .pic{
+    height: 145px;
+    margin-left: 30px;
+    overflow: hidden;
+    position: relative;
+}
+.kecheng_body .tp .title{
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.kecheng_body .tp img{
+    width: 100%;
+    min-height: 145px;
+    vertical-align: middle;
+    border: none;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.kecheng_body .tp img:hover{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.kecheng_body .tp:hover .triangle{
+    animation: my 0.8s cubic-bezier(0, 0, 0.2, 1);
+    transform: scale(1);
+}
+@keyframes my {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.kecheng_body .tp .triangle{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border-top: 10px solid #fff;
+    border-right: 10px solid #fff;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    box-shadow: 5px 5px 5px rgba(153, 153, 153, 0.53);
+    transform: scale(0);
+    transform-origin: 0 0;
+}
+.kecheng_body .tp .triangle .shadow{
+    width: 18px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .25)), to(rgba(0, 0, 0, 0)));
+    transform: rotateZ(43deg) translateY(-37px) translateX(-18px);
+}
+
+
+
+/* 学校老师 */
+.teacher_body{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+.teacher_body .content{
+    margin-left: -16px;
+}
+.teacher_body .content li{
+    margin-top: 10px;
+    width: 25%;
+    float: left;
+    transition: all 1s;
+    position: relative;
+}
+.teacher_body .content .con{
+    margin-left: 20px;
+    margin-right: 4px;
+    height: 333px;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.teacher_body .content .con1{
+    z-index: 2;
+}
+.teacher_body .content .con2{
+    transform: rotateY(180deg);
+    z-index: -2;
+}
+.teacher_body .con .pic{
+    width: 140px;
+    height: 140px;
+    margin: 20px auto;
+    border-radius: 50%;
+    background-size: cover;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.teacher_body .con .name{
+    color: #333;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+.con a:hover p.name{
+    color: #68cb9b;
+}
+.teacher_body .con .describe{
+    color: #666;
+    text-align: center;
+    padding: 10px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+.teacher_body .con .subject{
+    color: #666;
+    overflow: hidden;
+    border-top: 1px dashed #ccc;
+    padding-top: 10px;
+    margin: 10px;
+}
+.teacher_body .content li:hover .pic{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.teacher_body .content li:hover .con{
+    box-shadow:0 0 10px #999;
+}
+.teacher_box .btn{
+    color: #68cb9b;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    margin: 30px auto;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid #68cb9b;
+    border-radius: 10px;
+}
+.teacher_box .btn:hover{
+    color: #fff;
+    background-color: #68cb9b;
+}
+
+
+/* 师生互动 */
+.hudong_box{
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    background-color: #fafafa;
+}
+.hudong{
+    width: 1090px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.hudong_head{
+    margin: 0 auto;
+}
+.hudong_head .title{
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    font-size: 26px;
+    border-bottom: 1px solid #ccc;
+}
+.hudong_list_box{
+    height: 380px;
+    overflow: hidden;
+    position: relative;
+    -webkit-perspective: 20000px;
+    -webkit-perspective-origin:500px 50%;
+}
+.hudong_list{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.hudong_list,.hudong_list_cell{
+    width: 100%;
+    overflow: hidden;
+}
+.hudong_list_cell{
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    background-color: #fafafa;
+ }
+.hudong_list_cell .touxiang{
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-size: cover;
+}
+.hudong_list_cell .hudong_body{
+    float: left;
+}
+.hudong_list_cell .hudong_body .nick{
+    font-size: 14px;
+    color: #999;
+ }
+.hudong_list_cell .hudong_body .nick span{
+    font-size: 16px;
+    color: #666;
+    padding: 0 8px;
+}
+.hudong_list_cell .hudong_body .nick span:first-child{
+    padding-left: 0;
+}
+.hudong_list_cell .hudong_body .course{
+    color: #68cb9b;
+}
+.hudong_list_cell .hudong_body .con_body{
+    color: #999;
+    width: 1000px;
+    font-size: 12px;
+}
+
+
+
+/* 底部 */
+.footer_box {
+    background-color: #323232;
+    color: #999;
+    width: 100%;
+    overflow: hidden;
+    padding: 30px 0;
+}
+.footer{
+    width: 1090px;
+    margin: 0 auto;
+    font-size: 13px;
+}
+.footer .yqlj{
+    color: #999;
+    font-size: 18px;
+}
+.footer .yqlj_link{
+    margin: 10px 0;
+}
+.footer .yqlj_link a{
+    display: inline-block;
+    margin-right: 30px;
+}
+.footer .yqlj_link a:hover,.footer .about a:hover{
+    color: #999;
+}
+.footer .about{
+    margin-top: 10px;
+}
+.footer .about span{
+    color: #666;
+    padding-left: 50px;
+}
+.footer .copyright{
+    color: #666;
+    margin: 10px auto 0;
+}
+.footer .copyright span{
+    padding-right: 5px;
+}
+.footer .shengming{
+    color: #666;
+    text-align: center;
+    margin-top: 10px;
+}
+.login_page{
+    width: 300px;
+    height: 280px;
+    background-color: #fff;
+    box-shadow: 0 0 20px #666;
+    position: fixed;
+    top: -290px;
+    right: 240px;
+
+    z-index: 30;
+}
+.login_page .title{
+    padding: 10px;
+    background-color: #eee;
+    position: relative;
+}
+.login_page .title span{
+    width: auto;
+    height: 18px;
+    font-size: 18px;
+    font-family: 宋体;
+    font-weight: bold;
+    color: rgb(102, 102, 102);
+    margin-right: 29px;
+    display: block;
+    text-overflow: ellipsis;
+    text-align: left;
+    box-sizing: content-box;
+}
+.login_page .title .close{
+    position: absolute;
+    top: 12px;
+    right: -14px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background-image: url('imgs/close.png');
+}
+.login_page .login_body{
+    height: 40px;
+    margin: 0 12px;
+}
+.login_page .login_body .ipt_row{
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    border: 1px solid #bbb;
+    display:-webkit-box;
+}
+.login_page .login_body .input_icon{
+    display: block;
+    margin: 5px 0 0 5px;
+    width: 18px;
+    height: 18px;
+    background-image: url('imgs/input_icons.png');
+    background-repeat: no-repeat;
+    background-position:-4px -72px;
+    -webkit-box-flex:1;
+}
+.login_page .login_body  input{
+    display: block;
+    height: 30px;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -webkit-box-flex:11;
+    border: none;
+    outline: none;
+}
+.login_page .login_body .btn_box{
+    height: 40px;
+    margin-top: 30px;
+}
+.login_page .login_body .btn{
+    width: 100%;
+    height: 100%;
+    line-height: 100%;
+    font-size: 20px;
+    color: #fff;
+    background-color: #7dabdf;
+    border: 1px solid #7dabdf;
+    border-radius: 4px;
+}
+.login_page .login_body .btn:active{
+    background-color: #6b95c7;
+}
+.login_page .login_body .tip{
+    color: #999;
+    font-size: 12px;
+    margin-top: 10px;
+}

@@ -1,0 +1,423 @@
+body{
+    background-color: #eee;
+}
+.body_head{
+    width:100%;
+    height:160px;
+    overflow: hidden;
+    margin-top:60px;
+    background-image: url('imgs/mycloudheadbg.png');
+    background-size: 100% 100%;
+}
+.body_head_con{
+    width:1200px;
+    height:90px;
+    margin:35px auto;
+}
+.body_head_con .touxiang{
+    width:90px;
+    height:90px;
+    border-radius: 50%;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    margin-right: 20px;
+}
+.body_head_con .touxiang img{
+    width:80px;
+    height:80px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin: auto;
+}
+.body_head_con .con .nick{
+    width:800px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: normal;
+    color: #333;
+    line-height: 60px;
+    background-color: transparent;
+    border:none;
+
+}
+.body_head_con p.info{
+    font-size: 15px;
+    cursor: pointer;
+    color: #555;
+}
+.body_con{
+    width:1200px;
+    margin:30px auto;
+    overflow: hidden;
+}
+.body_con .menu_list{
+    width:225px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #fff;
+    box-shadow: 0 0 4px #ccc;
+}
+.body_con .menu_list li{
+    cursor: pointer;
+    font-size: 16px;
+    height:60px;
+    line-height:60px;
+    border-top: 1px solid #ccc;
+}
+.body_con .menu_list ul li span.icon{
+    float: left;
+    width:20px;
+    height:20px;
+    margin:19px;
+    background-image: url(imgs/mycloudnavicons.png);
+    background-repeat: no-repeat;
+}
+.body_con .menu_list ul li:nth-child(1) span.icon{
+    background-position: 0 0;
+}
+.body_con .menu_list ul li:nth-child(2) span.icon{
+    background-position: 0 -60px;
+}
+.body_con .menu_list ul li:nth-child(3) span.icon{
+    background-position: 0 -122px;
+}
+.body_con .menu_list ul li:nth-child(4) span.icon{
+    background-position: 0 -183px;
+}
+.body_con .menu_list div.border-t, .body_con .menu_list div.border-t img{
+    width:225px;
+    height:225px;
+}
+.body_con .menu_list ul li:hover{
+    color: #00a750;
+    background-color: #eee;
+}
+.body_con .menu_list ul li.active{
+    color: #fff;
+    background-color: #00a750;
+}
+.body_con .menu_list ul li:nth-child(1):hover span.icon{
+    background-position: -40px 0;
+}
+.body_con .menu_list ul li:nth-child(2):hover span.icon{
+    background-position: -40px -60px;
+}
+.body_con .menu_list ul li:nth-child(3):hover span.icon{
+    background-position: -40px -122px;
+}
+.body_con .menu_list ul li:nth-child(4):hover span.icon{
+    background-position: -40px -183px;
+}
+.body_con .menu_list ul li:nth-child(1).active span.icon{
+    background-position: -80px 0;
+}
+.body_con .menu_list ul li:nth-child(2).active span.icon{
+    background-position: -80px -60px;
+}
+.body_con .menu_list ul li:nth-child(3).active span.icon{
+    background-position: -80px -122px;
+}
+.body_con .menu_list ul li:nth-child(4).active span.icon{
+    background-position: -80px -183px;
+}
+
+.body_right{
+    width: 950px;
+    overflow: hidden;
+}
+/* 课程列表 */
+.kecheng_box,.teacher_box,.hudong_box{
+    margin-top: 50px;
+}
+.kecheng_body, .teacher_body {
+    width: 950px;
+    overflow: hidden;
+    margin:0 auto;
+}
+
+.kecheng_body ul {
+    overflow: hidden;
+    margin-left: -30px;
+}
+.kecheng_body .tp {
+    width: 25%;
+    float: left;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.kecheng_body .tp .pic{
+    height: 125px;
+    margin-left: 30px;
+    overflow: hidden;
+    position: relative;
+}
+.kecheng_body .tp .title{
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+    margin-left: 30px;
+    background-color: #fff;
+}
+.kecheng_body .tp img{
+    width: 100%;
+    min-height: 125px;
+    vertical-align: middle;
+    border: none;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.kecheng_body .tp img:hover{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.kecheng_body .tp:hover .triangle{
+    animation: my 0.8s cubic-bezier(0, 0, 0.2, 1);
+    transform: scale(1);
+}
+@keyframes my {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.kecheng_body .tp .triangle{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border-top: 10px solid #fff;
+    border-right: 10px solid #fff;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    box-shadow: 5px 5px 5px rgba(153, 153, 153, 0.53);
+    transform: scale(0);
+    transform-origin: 0 0;
+}
+.kecheng_body .tp .triangle .shadow{
+    width: 18px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .25)), to(rgba(0, 0, 0, 0)));
+    transform: rotateZ(43deg) translateY(-37px) translateX(-18px);
+}
+
+
+/* 我的老师 */
+.teacher_body .content{
+    width:950px;
+    overflow: hidden;
+}
+.teacher_body .content li{
+    margin: 4px 0 20px 0;
+}
+.teacher_body .content .con{
+    width:90%;
+}
+.teacher_body .content li, .teacher_body .content .con{
+    height:220px;
+}
+.teacher_body .content .con{
+    background-color: #eee;
+}
+.teacher_body .content li:hover .con{
+    box-shadow:0 0 10px #999;
+    background-color: #fff;
+    border-radius: 20px;
+}
+/* 个人设置 */
+.setting{
+    width:908px;
+    padding:20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.input-row  input[type = text]{
+    width:300px;
+    height:40px;
+    background-color: #eee;
+    box-shadow: 0 0 2px #ddd inset;
+    border-radius: 4px;
+    margin-bottom:20px;
+}
+.input-row  label{
+    width:100px;
+    line-height:40px;
+    padding-right:10px;
+}
+.input-row  #touxiang{
+    width:100px;
+    height:100px;
+    float: left;
+}
+.input-row  .btn_box{
+    float: left;
+    margin-left:20px;
+}
+.input-row  .btn_box .upload_btn ,.save_btn, .upLoadFile_btn{
+    color: #fff;
+    text-align: center;
+    width:80px;
+    height:30px;
+    line-height: 30px;
+    margin-top:10px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #00cf5a;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#00cf5a), to(#00a750));
+}
+.input-row  .btn_box .upload_btn:active, .save_btn:active, .upLoadFile_btn:active{
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#00a750), to(#007c3e));
+}
+.input-row  .btn_box .upload_btn .upload_file{
+    cursor: pointer;
+    position: absolute;
+    top: -25px;
+    left: -5px;
+    width: 90px;
+    height: 60px;
+}
+.input-row .save_btn{
+    font-size: 14px;
+    width:100px;
+    height:40px;
+    line-height: 38px;
+    margin: 48px 0 0 110px;
+}
+
+
+/* 我的评论 */
+.content_body{
+    width:948px;
+    border:1px solid #ccc;
+    border-bottom: none;
+    background-color: #fff;
+}
+.content_body > li{
+    border-bottom: 1px solid #ddd;
+}
+.fabu_btn{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    float: right;
+    width:140px;
+    height:40px;
+    line-height: 40px;
+    border: none;
+    border-radius: 4px;
+    background-color: #68cb9b;
+}
+.fabu_btn:hover{
+    background-color: #64c594;
+}
+.content_body li{
+    padding:20px;
+}
+.qa_con{
+    float: left;
+}
+.qa_con p{
+    margin-bottom:5px;
+}
+.qa_con .q{
+    color: #333;
+    font-weight: 600;
+    max-width:750px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left:30px;
+    background-image: url('imgs/q.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.qa_con .a{
+    font-size: 13px;
+    color: #999;
+    max-width:880px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left:30px;
+    background-image: url('imgs/a.png');
+    background-repeat: no-repeat;
+    background-position: 3px 6px;
+}
+.qa_con .q.special{
+    background-image: url('imgs/d.png');
+}
+.qa_con .a span{
+    float: left;
+}
+.qa_con .a .a_p{
+    width:20px;
+    height:20px;
+    margin:2px 2px 0;
+    border-radius: 50%;
+    background-image: url('imgs/tx-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.qa_con .a_p_con{
+    width:880px;
+    color: #999;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: justify;
+    margin:0 0 20px;
+    padding-left:30px;
+}
+.a_p_con .time{
+    float: right;
+    padding-left:30px;
+}
+
+
+/* 上传分享 */
+.share{
+    width: 908px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+#selt{
+    width:200px;
+    height:40px;
+}
+#zhang, #jie{
+    width:30px;
+    height:30px;
+    text-align: center;
+    margin:5px 10px;
+}
+.upLoadFile_btn{
+    margin: 30px 0 0 30px;
+}
+.upLoadFile_btn input[type = file]{
+    cursor: pointer;
+    position: absolute;
+    top: -25px;
+    left: -5px;
+    width: 90px;
+    height: 60px;
+}
+
+

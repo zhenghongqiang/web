@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/vue.resource/1.3.1/vue-resource.min.js"></script> -->
+	<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+	<style type="text/css">
+		.color1 {
+			background: #ff5555;
+			color: #fff;
+		}
+
+		.color2 {
+			background: #ccc;
+			color: #333;
+		}
+
+		input[type="text"] {
+			border: solid 1px #ccc;
+		}
+
+		button {
+			padding: 4px 6px;
+			background: #ff5555;
+			color: #fff;
+			border: 0;
+			margin-top: 10px;
+			outline: 0;
+		}
+
+		button:active {
+			background: #ccc;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="info">
+		<div>
+			<label for="">加数</label>
+			<input type="text" name="" id="" v-model="one">
+		</div>
+		<div>
+			<label for="">加数</label>
+			<input type="text" name="" id="" v-model="two">
+		</div>
+		<p style="color:#ff5555" v-show="tree">{{ tree }}</p>
+		<button @click="clk">计算</button>
+
+		<div :class="isC ?'color1':'color2'">这里就是颜色</div>
+		<button @click="changeColor">改变颜色</button>
+	</div>
+	<style type="text/css">
+		/*.button {
+			transform: skewX(45deg);
+		}
+		.button>div {
+			transform: skewX(-45deg);
+		}
+		.button {
+			display: inline-block;
+			padding: .5em 1em;
+			border: 0;
+			margin: 2em;
+			background: #58a;
+			color: white;
+			text-transform: uppercase;
+			text-decoration: none;
+			font: bold 200%/1 sans-serif;
+		}*/
+		.button {
+			position: relative;
+			display: inline-block;
+			padding: .5em 1em;
+			border: 0; margin: .5em;
+			/*背景设置成透明*/
+			background: transparent;
+			color: white;
+			text-transform: uppercase;
+			text-decoration: none;
+			font: bold 200%/1 sans-serif;
+		}
+
+		.button::before {
+			content: ''; 
+			position: absolute;
+			top: 0; right: 0; bottom: 0; left: 0;
+			/*文字内容显示*/
+			z-index: -1;
+			background: #58a;
+			transform: skew(45deg);
+		}
+	</style>
+	<button class="button"><div>平行四边形</div></button>
+	<button class="button">2平行四边形</button>
+	
+
+	<script type="text/javascript">
+		var app = new Vue({
+			el: '#info',
+			data: {
+				one: '',
+				two: '',
+				tree: false,
+				color: '',
+				isC: false,
+			},
+			computed: {
+
+			},
+			watch: {
+				one() {
+					if (isNaN(this.one)) {
+						this.one = '';
+						return;
+					}
+				},
+				two() {
+					if (isNaN(this.two)) {
+						this.two = '';
+						return;
+					}
+				},
+			},
+			methods: {
+				clk() {
+					this.tree = Number(this.one) + Number(this.two);
+				},
+				changeColor() {
+					this.isC = (this.isC) ? false : true;
+				}
+			},
+		})
+
+	</script>
+</body>
+</html>

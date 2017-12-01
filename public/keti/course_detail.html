@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>课程详情</title>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/course_detail.css"/>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="head_fixed">
+        <a href="http://www.lcu.edu.cn/" class="logo pull-left">
+            <img src="css/imgs/logo.png" alt="聊城大学" title="聊城大学"/>
+        </a>
+        <div class="nav">
+            <li><a href="index.html">首页</a></li>
+            <li class="current"><a href="course.html">课程</a></li>
+            <li><a href="teacher.html">名师</a></li>
+            <li><a href="personal_student.html">个人中心</a></li>
+        </div>
+        <div class="login">
+            <div class="btn">
+                <span class="icon" style="background-image: url(css/imgs/icon-login2.png);"></span>
+                <a>登录</a>
+            </div>
+        </div>
+    </div>
+    <!-- 登录 -->
+    <div class="login_page">
+        <div class="title">
+            <span>登录</span>
+            <span class="close"></span>
+        </div>
+        <div class="login_body">
+            <div class="ipt_row">
+                <span class="input_icon"></span>
+                <input id="name" type="text" placeholder="请输入用户名"/>
+            </div>
+            <div class="ipt_row">
+                <span class="input_icon" style="background-position:-4px -150px;"></span>
+                <input id="psw" type="password" placeholder="请输入密码"/>
+            </div>
+            <div class="btn_box">
+                <button class="btn">登录</button>
+            </div>
+            <div class="tip">
+                提示：用户名和密码同教务处系统
+            </div>
+        </div>
+    </div>
+    <!-- 内容头部 -->
+    <div class="course_bg">
+        <div class="course_infos">
+            <div class="infos">
+                <h1>javaScript入门篇</h1>
+                <div class="bottom">
+                    <p class="teacher">
+                        授课老师：<span><a href="">周老师</a>、<a href="">宋老师</a>、<a href="">孟老师</a></span>
+                    </p>
+
+                    <p class="guanzhu">
+                        <span><em>300</em>人已学习</span>
+                        <span class="zan">赞</span>
+                        <span class="shoucang">关注</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 内容部分 -->
+    <div class="content">
+        <div class="content_left">
+            <div class="kecheng_jieshao">
+                <h3>课程介绍</h3>
+                <p class="jieshao">
+                    CSS至今已经发展了将近20个年头，暮气沉沉，廉颇老矣？通过本课程我们将切实了解Sass与Compass是如何让CSS重焕青春的。由浅入深，从Sass的语法说起，最后衍伸至Compass框架的应用，通过这两个工具来帮助您写出更优秀的CSS。
+                </p>
+            </div>
+            <div class="kecheng_line">
+                <h3>课程提纲</h3>
+                <ul class="article">
+                    <li>
+                        <div>
+                            <h3 class="title">第一章 课程介绍</h3>
+                            <p>深刻了解本课程</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h3 class="title">第二章 简单的hello,world程序</h3>
+                            <p>教你如何写出成程序员必写程序——hello,world</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h3 class="title">第三章 基础变量介绍</h3>
+                            <p>基础变量如何用</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h3 class="title">第四章 面向对象编程</h3>
+                            <p>编程主流——面向对象</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h3 class="title">第五章 异常机制及抛出异常</h3>
+                            <p>教你如何处理异常机制</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_right">
+            <h3>老师提醒</h3>
+            <ul class="teacher_list">
+                <li class="teacher_list_cell">
+                    <div class="top clearfix">
+                        <div class="box-img pull-left"></div>
+                        <div class="name pull-left">周书峰
+                            <p>java、数据库</p>
+                        </div>
+                    </div>
+                    <div class="teacher_word">
+                        <dl>
+                            <dt>课程须知</dt>
+                            <dd>如果您对CSS一无所知，建议您先学习CSS的相关知识。如果您想一步登天，那么您必将摔得体无完肤。</dd>
+                        </dl>
+                        <dl>
+                            <dt>老师告诉你能学到什么？</dt>
+                            <dd>1.掌握如何使用Sass和Compass写出更优秀的CSS。
+                                2.痛殴CSS编写过程中，这么多年的拦路虎，比如说精灵图自动合图，属性的浏览器前缀处理。
+                                3.在项目的开发，生产周期内，使用的样式、图片、字体等内容，如何更好的组织起来。</dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+            <button class="studay_btn">开始学习</button>
+        </div>
+        <div class="clearfix"></div>
+        <div class="student_comment">
+            <h3>学生提问</h3>
+            <div class="hudong_list_box">
+                <ul class="hudong_list"></ul>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer_box">
+        <div class="footer">
+            <p class="yqlj">友情链接</p>
+            <p class="yqlj_link">
+                <a href="http://jwc.lcu.edu.cn/" target="_blank">聊城大学</a>
+                <a href="http://math.lcu.edu.cn/index.html" target="_blank">聊城大学数学科学学院</a>
+                <a href="http://course.lcu.edu.cn/sc8/" target="_blank">聊城大学天空教室</a>
+            </p>
+            <p class="about">
+                <a href="">关于我们</a>
+                <span>服务热线：000 - 0000 - 0000</span>
+                <span>Email：1933686674@qq.com</span>
+            </p>
+            <p class="copyright">
+                <span>©2015-2016</span>
+                <span>聊城大学</span>
+                <span>版权所有</span>
+                <span>数学科学学院2012级5班&nbsp;&nbsp;宋飞燕</span>
+            </p>
+            <p class="shengming">师生课程交互平台</p>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/course_detail.js"></script>
+</body>
+</html>

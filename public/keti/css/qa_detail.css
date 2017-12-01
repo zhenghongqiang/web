@@ -1,0 +1,72 @@
+.content{
+    margin-top: 120px;
+}
+.content_left{
+    padding-bottom:10px;
+    border-bottom: 1px solid #ccc;
+}
+.touxiang .box_img{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background-image: url(imgs/tx-1.png);
+    background-size: cover;
+}
+.touxiang .nick{
+    color: #666;
+    margin:5px 0 0 20px;
+}
+.touxiang .shoucang{
+    padding-left:20px;
+    background-image: url(imgs/xin.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.content_left_head{
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top:20px;
+}
+.content_left_con{
+    color: #666;
+    font-size: 14px;
+    margin-top:20px;
+}
+.content_left_con p img{
+    margin:5px 0;
+}
+.time{
+    color: #999;
+    font-size: 12px;
+    margin:10px 0;
+}
+.time p{
+    margin-left:10px;
+}
+.time p:first-child{
+    margin-left:0;
+}
+.ipt_row #txt{
+    width: 100%;
+    height: 80px;
+    margin:10px 0 0;
+}
+.answer_btn{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    float: right;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    border-radius: 4px;
+    background-color: #68cb9b;
+}
+.answer_btn:hover{
+    background-color: #56ab7f;
+}
+.question_list_cell{
+    margin:15px 0;
+}

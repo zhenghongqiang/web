@@ -1,0 +1,61 @@
+
+
+
+/* 内容部分 */
+.content{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 左边内容 */
+.content_left{
+    float: left;
+    width: 880px;
+}
+.content h3{
+    color: #68cb9b;
+    margin: 60px 0 10px;
+}
+.content_left .kecheng_jieshao .jieshao{
+    color: #333;
+    line-height: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.content_left .kecheng_line .article li{
+    padding: 10px 5px 5px;
+    margin-bottom: 20px;
+    background-color: #fdfdfd;
+}
+.content_left .kecheng_line .article li div{
+    height: 60px;
+    padding-left: 80px;
+    background-image: url('imgs/course_info_sprit.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.content_left .kecheng_line .article li div  .title{
+    color: #333;
+    margin: 0;
+}
+.content_left .kecheng_line .article li div p{
+    color: #999;
+    font-size: 13px;
+    margin-top: 6px;
+}
+.content_left .kecheng_line .article li:hover{
+    box-shadow: 0 0 8px #ccc;
+}
+
+
+/* 师生互动 */
+.hudong_list_box{
+    width:1200px;
+    height:470px;
+    margin-top:20px;
+}
+.hudong_list_cell .hudong_body .con_body{
+    width:1100px;
+}
+.hudong_list_cell{
+    background-color: #fff;
+}

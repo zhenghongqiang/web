@@ -1,0 +1,132 @@
+.qa_box{
+    width: 880px;
+    margin-top:20px;
+}
+.qa_box .ipt_row{
+    margin-bottom: 20px;
+}
+.qa_box .ipt_row label{
+    line-height: 40px;
+    width:80px;
+    cursor: pointer;
+}
+.qa_box .ipt_row input{
+    width:790px;
+    height: 40px;
+    line-height: 40px;
+    border:1px solid #ccc;
+}
+.qa_box .ipt_row textarea{
+    width:790px;
+    height: 100px;
+    line-height: 20px;
+    border:1px solid #ccc;
+}
+.content_body{
+    margin-top:40px;
+}
+.content_body > li{
+    border-bottom: 1px solid #ddd;
+}
+.fabu_btn{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    float: right;
+    width:140px;
+    height:40px;
+    line-height: 40px;
+    border: none;
+    border-radius: 4px;
+    background-color: #68cb9b;
+}
+.fabu_btn:hover{
+    background-color: #64c594;
+}
+.content_body li{
+    padding:20px;
+}
+.box_img{
+    float: left;
+}
+.box_img .img{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-image: url('imgs/tx-8.jpg');
+    background-size: cover;
+}
+.box_img .nick{
+    width:40px;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    margin-top:5px;
+}
+.qa_con{
+    float: left;
+    margin-left:30px;
+}
+.qa_con p{
+    margin-bottom:5px;
+}
+.qa_con .q{
+    color: #333;
+    font-weight: 600;
+    max-width:750px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left:30px;
+    background-image: url('imgs/q.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.qa_con .a{
+    font-size: 13px;
+    color: #999;
+    max-width:750px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left:30px;
+    background-image: url('imgs/a.png');
+    background-repeat: no-repeat;
+    background-position: 3px 6px;
+}
+.qa_con .q.special{
+    background-image: url('imgs/d.png');
+}
+.qa_con .a span{
+    float: left;
+}
+.qa_con .a .a_p{
+    width:20px;
+    height:20px;
+    margin:2px 2px 0;
+    border-radius: 50%;
+    background-image: url('imgs/tx-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.qa_con .a_p_con{
+    width:736px;
+    color: #999;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: justify;
+    margin:0 0 20px;
+    padding-left:30px;
+}
+.qa_con .time{
+    color: #999;
+    font-size: 13px;
+    padding-left:30px;
+    margin:0;
+}
+.qa_con .time span{
+    padding-right:30px;
+}
+.fenye{
+    width:880px !important;
+}

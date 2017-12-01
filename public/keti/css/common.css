@@ -1,0 +1,432 @@
+html,body{
+    position: relative;
+}
+/* ͷ�� */
+html,body{
+    position: relative;
+}
+.head_box{
+    width: 100%;
+    height: 130px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px #ccc;
+}
+.head{
+    width: 1090px;
+    height: 130px;
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+    height: 130px;
+    line-height: 130px;
+}
+.logo img{
+    vertical-align: middle;
+}
+.head_fixed{
+    width: 100%;
+    height: 60px;
+    padding:0 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px #00535d;
+    background-color: #00757F;
+}
+.head_fixed .logo{
+    height: 60px;
+    line-height: 60px;
+}
+.head_fixed .logo img{
+    height: 40px;
+    width: auto;
+}
+.head_fixed .nav{
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    line-height: 60px;
+}
+.head_fixed .nav li{
+    font-size: 16px;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    margin: 0;
+    padding: 0;
+    margin-left: 50px;
+    border: none;
+}
+.head_fixed .nav li.current{
+    border: none;
+}
+.head_fixed .nav li a{
+    color: #fff;
+    font-size: 16px;
+}
+.head_fixed .login{
+    margin: 0;
+}
+.head_fixed .login .btn a{
+    color: #fff;
+}
+.head_fixed .login .btn:hover a{
+    color: #68cb9b !important;
+}
+.nav{
+    float: left;
+    margin-top: 30px;
+    padding: 15px 0 0 0;
+}
+.nav li{
+    float: left;
+    margin-left: 30px;
+    padding: 8px 10px;
+}
+.nav li:first-child{
+    margin-left: 50px;
+}
+.nav li a{
+    font-size: 20px;
+}
+.nav li.current{
+    cursor: pointer;
+}
+.nav li.current a{
+    color: #68cb9b;
+}
+
+.login{
+    float: right;
+    margin-top: 35px;
+    padding: 15px 0 0 0;
+}
+.login input{
+    padding: 6px 10px;
+    border-radius: 20px;
+    margin-right: 60px;
+    background-image: url(imgs/search.png);
+    background-size: auto 80%;
+    background-repeat: no-repeat;
+    background-position: right;
+    border: 1px solid #bbb;
+}
+.login .btn{
+    float: right;
+    cursor: pointer;
+}
+.login .btn .icon{
+    float: left;
+    width: 18px;
+    height: 18px;
+    background-image: url(imgs/icon-login.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    margin: 3px 10px 0 0;
+}
+.login .btn a{
+    float: left;
+    font-size: 16px;
+}
+
+
+/* ��¼ҳ */
+.login_page{
+    width: 300px;
+    height: 280px;
+    background-color: #fff;
+    box-shadow: 0 0 20px #666;
+    position: fixed;
+    top: -290px;
+    right: 240px;
+
+    z-index: 30;
+}
+.login_page .title{
+    padding: 10px;
+    background-color: #eee;
+    position: relative;
+}
+.login_page .title span{
+    width: auto;
+    height: 18px;
+    font-size: 18px;
+    font-family: ����;
+    font-weight: bold;
+    color: rgb(102, 102, 102);
+    margin-right: 29px;
+    display: block;
+    text-overflow: ellipsis;
+    text-align: left;
+    box-sizing: content-box;
+}
+.login_page .title .close{
+    position: absolute;
+    top: 12px;
+    right: -14px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background-image: url('imgs/close.png');
+}
+.login_page .login_body{
+    height: 40px;
+    margin: 0 12px;
+}
+.login_page .login_body .ipt_row{
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    border: 1px solid #bbb;
+    display:-webkit-box;
+}
+.login_page .login_body .input_icon{
+    display: block;
+    margin: 5px 0 0 5px;
+    width: 18px;
+    height: 18px;
+    background-image: url('imgs/input_icons.png');
+    background-repeat: no-repeat;
+    background-position:-4px -72px;
+    -webkit-box-flex:1;
+}
+.login_page .login_body  input{
+    display: block;
+    height: 30px;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -webkit-box-flex:11;
+    border: none;
+    outline: none;
+}
+.login_page .login_body .btn_box{
+    height: 40px;
+    margin-top: 30px;
+}
+.login_page .login_body .btn{
+    width: 100%;
+    height: 100%;
+    line-height: 100%;
+    font-size: 20px;
+    color: #fff;
+    background-color: #7dabdf;
+    border: 1px solid #7dabdf;
+    border-radius: 4px;
+}
+.login_page .login_body .btn:active{
+    background-color: #6b95c7;
+}
+.login_page .login_body .tip{
+    color: #999;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* �ײ� */
+/* �ײ� */
+.footer_box {
+    background-color: #323232;
+    color: #999;
+    width: 100%;
+    overflow: hidden;
+    padding: 30px 0;
+}
+.footer{
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 13px;
+}
+.footer .yqlj{
+    color: #999;
+    font-size: 18px;
+}
+.footer .yqlj_link{
+    margin: 10px 0;
+}
+.footer .yqlj_link a{
+    display: inline-block;
+    margin-right: 30px;
+}
+.footer .yqlj_link a:hover,.footer .about a:hover{
+    color: #999;
+}
+.footer .about{
+    margin-top: 10px;
+}
+.footer .about span{
+    color: #666;
+    padding-left: 50px;
+}
+.footer .copyright{
+    color: #666;
+    margin: 10px auto 0;
+}
+.footer .copyright span{
+    padding-right: 5px;
+}
+.footer .shengming{
+    color: #666;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+/* 课程详情 */
+.course_bg{
+    width: 100%;
+    height: 240px;
+    margin-top: 60px;
+    background-image: url('../image/kc1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: relative;
+}
+.course_infos{
+    width: 100%;
+    height: 240px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.course_infos .infos{
+    width: 1200px;
+    margin:0 auto;
+}
+.course_infos .infos h1{
+    color: #fff;
+    font-weight: 500;
+    margin: 40px 0;
+}
+.course_infos .infos .bottom{
+    color: #f8f8f8;
+    font-size: 16px;
+    margin-top: 120px;
+    height: 50px;
+    line-height: 50px;
+}
+.course_infos .infos .bottom .teacher{
+    float: left;
+}
+.course_infos .infos .bottom .teacher a{
+    color: #fff;
+}
+.course_infos .infos .bottom .guanzhu{
+    float: right;
+}
+.course_infos .infos .bottom .guanzhu span{
+    float: right;
+    margin-left: 30px;
+}
+.course_infos .infos .bottom .guanzhu .zan, .course_infos .infos .bottom .guanzhu .shoucang{
+    padding-left: 25px;
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    background-position: left center;
+    cursor: pointer;
+}
+.course_infos .infos .bottom .guanzhu .zan{
+    background-image: url(imgs/zan.png);
+}
+.course_infos .infos .bottom .guanzhu .shoucang{
+    background-image: url(imgs/gunahzu.png);
+}
+
+/* 右边内容 */
+.content_right{
+    float: right;
+    width: 240px;
+    overflow: hidden;
+}
+.teacher_list{
+    margin-top:20px;
+}
+.teacher_list_cell .top{
+    overflow: hidden;
+}
+.teacher_list_cell .top .box-img{
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+    background-image: url('imgs/tx-9.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.teacher_list_cell .top .name{
+    color: #333;
+    font-size: 18px;
+    line-height: 35px;
+    margin-left:20px;
+}
+.teacher_list_cell .top .name p{
+    color: #666;
+    font-size: 13px;
+}
+.teacher_word{
+    width: 200px;
+    margin-top:20px;
+    padding:20px;
+    position: relative;
+    background-color: rgba(104, 203, 155, 0.05);
+}
+.teacher_word:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top: 0 none;
+    border-bottom-color: rgba(104, 203, 155, 0.05);
+}
+.teacher_word dl{
+    text-align: justify;
+}
+.teacher_word dl dt{
+    font-weight: bold;
+    margin: 5px 0;
+}
+.teacher_word dl dd{
+    font-size: 13px;
+}
+.studay_btn{
+    color: #fff;
+    font-size: 20px;
+    display: block;
+    width:240px;
+    height:60px;
+    margin:20px auto;
+    border: none;
+    background-color: #68cb9b;
+    border-radius: 30px;
+}
+.studay_btn:hover{
+    background-color: #57ad7f;
+}
+
+
+
+/* 分页*/
+.fenye{
+    width: 1200px;
+    margin: 60px auto;
+    text-align: center;
+}
+.fenye span{
+    display: inline-block;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+.fenye span:hover,.fenye span.current{
+    color: #fff;
+    background-color: #00757F;
+}

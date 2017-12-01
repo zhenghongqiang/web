@@ -1,0 +1,33 @@
+安装homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+brew install nginx
+
+ln -s /usr/local/var/log /tmp/log
+rm -rf /usr/local/var/www
+mkdir ~/iserver
+ln -s ~/iserver /usr/local/var/www
+
+brew install memcached
+
+brew tap homebrew/php
+brew install --without-apache --with-fpm php71
+echo 'export PATH="$(brew --prefix homebrew/php/php71)/bin:/usr/local/sbin:$PATH"' >> ~/.bash_profile
+
+brew install php71-memcached php71-mcrypt
+brew install homebrew/php/php71-opcache
+brew install homebrew/php/php71-mongodb
+
+echo "start memcached: memcached -vv -c 100 -m 64 -u $(whoami)  -l 127.0.0.1 -p 11211"
+echo "start php: brew services start homebrew/php/php71"
+echo "stop php: brew services stop homebrew/php/php71"
+echo "start nginx: sudo nginx"
+echo "stop nginx: sudo nginx -s stop"
+echo "you might change port 8080 to 80 in /usr/local/etc/nginx/nginx.conf"
+echo "start mysql: mysql.server start"
+echo "To connect mysql: mysql -uroot"
+
+echo "install php composer"
+curl -sS https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/composer
+composer config -g repo.packagist composer https://packagist.phpcomposer.com

@@ -1,0 +1,187 @@
+.fenlei_box{
+    width: 1200px;
+    margin: 60px auto 0;
+}
+.fenlei_box .title{
+    font-size: 16px;
+    font-weight: 700;
+    color: #14191e;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+.fenlei_box .school,
+.fenlei_box .major,
+.fenlei_box .subject{
+    padding: 10px 0;
+    font-size: 13px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+    display: -webkit-box;
+}
+.fenlei_box .school{
+    line-height: 36px;
+}
+.fenlei_box .name{
+    width: 50px;
+    color: #888;
+    margin: 0 20px;
+}
+.fenlei_box .school_list,
+.fenlei_box .major_list,
+.fenlei_box .subject_list{
+    box-sizing: border-box;
+    -webkit-box-flex: 11;
+}
+.fenlei_box .school_list li,
+.fenlei_box .major_list li,
+.fenlei_box .subject_list li{
+    display: inline-block;
+    color: #333;
+    cursor: pointer;
+    width: 16%;
+}
+.fenlei_box li:hover{
+    color: #68cb9b;
+}
+.fenlei_box .school_list li:first-child,
+.fenlei_box .major_list li:first-child,
+.fenlei_box .subject_list li:first-child
+{
+    margin-left: 0;
+}
+
+/* �������� */
+.hottest{
+    height: 40px;
+    background-color: #f9f9f9;
+}
+.hottest span{
+    color: #999;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.hottest span.current{
+    color: #666;
+}
+
+
+/* �γ��б� */
+.kecheng_body {
+    width: 1200px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+.kecheng_body ul {
+    overflow: hidden;
+    margin-left: -60px;
+}
+.kecheng_body .tp {
+    width: 25%;
+    float: left;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.kecheng_body .tp .pic{
+    height: 120px;
+    margin-left: 60px;
+    overflow: hidden;
+    position: relative;
+}
+.kecheng_body .tp .title{
+    padding: 5px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 60px;
+}
+.kecheng_body .tp img{
+    width: 100%;
+    min-height: 120px;
+    vertical-align: middle;
+    border: none;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+.kecheng_body .tp img:hover{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.kecheng_body .tp:hover .triangle{
+    animation: my 0.8s cubic-bezier(0, 0, 0.2, 1);
+    transform: scale(1);
+}
+@keyframes my {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.kecheng_body .tp .triangle{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border-top: 10px solid #fff;
+    border-right: 10px solid #fff;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    box-shadow: 5px 5px 5px rgba(153, 153, 153, 0.53);
+    transform: scale(0);
+    transform-origin: 0 0;
+}
+.kecheng_body .tp .triangle .shadow{
+    width: 18px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .25)), to(rgba(0, 0, 0, 0)));
+    transform: rotateZ(43deg) translateY(-37px) translateX(-18px);
+}
+#container a:hover .title{
+    color: #68cb9b;
+}
+#container .con{
+    color: #999;
+    font-size: 13px;
+    width: 255px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 60px;
+}
+#container .zan{
+    color: #666;
+    font-size: 13px;
+    width: 255px;
+    margin-left: 60px;
+    background-image: url(imgs/zan_h.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: auto 20px;
+    padding-left: 30px;
+}
+
+
+
+

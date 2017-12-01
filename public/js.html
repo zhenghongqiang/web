@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+function sum() {
+	var a = 1,
+	b = 1;
+	return a + b;
+}
+// var num = sum(1,3);
+// console.log(sum())
+
+var myname = 'old';
+function fo(){
+	alert(myname);
+	var myname = 'new';
+	alert(myname);
+}
+// fo();
+
+var man = {
+	'name' : 'you',
+	'age' : 12
+}
+Object.prototype.clone = function(){};
+
+// for (var i in man){
+// 	if(man.hasOwnProperty(i)){
+// 		console.log(i);
+// 	}
+// }
+for(var i of Object.keys(man)){
+	console.log(i,man[i]);
+}
+
+</script>
+</body>
+</html>
